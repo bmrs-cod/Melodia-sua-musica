@@ -1,0 +1,44 @@
+/* scroll suave nos links de âncora */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem; /* compensa o menu fixo */
+}
+
+/* estado inicial do menu: transparente, sem fundo */
+#navbar {
+  background-color: transparent;
+}
+
+/* classe aplicada via JS quando a página rola */
+#navbar.scrolled {
+  background-color: rgba(14, 14, 18, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* animação das barras de áudio do hero — cresce/encolhe a partir da base */
+.bar {
+  transform-origin: bottom center;
+  animation: bounce 1.4s ease-in-out infinite;
+}
+.bar:nth-child(2) { animation-delay: 0.1s; }
+.bar:nth-child(3) { animation-delay: 0.2s; }
+.bar:nth-child(4) { animation-delay: 0.3s; }
+.bar:nth-child(5) { animation-delay: 0.4s; }
+.bar:nth-child(6) { animation-delay: 0.5s; }
+.bar:nth-child(7) { animation-delay: 0.6s; }
+
+@keyframes bounce {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.35); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .bar {
+    animation: none;
+  }
+}
