@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melodia — Sua música, sua forma</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bg: "#0E0E12",
+            surface: "#17171D",
+            accent: "#6C5CE0",
+            amber: "#F2A65A",
+            muted: "#9A9AA6"
+          },
+          fontFamily: {
+            display: ["Space Grotesk", "sans-serif"],
+            body: ["Inter", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-bg text-white font-body">
+
+  <!-- Menu fixo -->
+  <header id="navbar" class="fixed top-0 w-full z-50 transition-colors duration-300">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-5">
+      <span class="font-display text-xl font-bold">Melodia</span>
+      <div class="hidden md:flex items-center gap-8 text-sm text-muted">
+        <a href="#beneficios" class="hover:text-white transition-colors">Benefícios</a>
+        <a href="#funcionalidades" class="hover:text-white transition-colors">Funcionalidades</a>
+        <a href="#depoimentos" class="hover:text-white transition-colors">Depoimentos</a>
+        <a href="#contato" class="hover:text-white transition-colors">Contato</a>
+      </div>
+      <a href="#contato" class="bg-accent text-white text-sm font-medium px-5 py-2 rounded-full hover:bg-accent/90 transition-colors">Ouvir agora</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto px-6 pt-40 pb-24 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h1 class="font-display text-5xl md:text-6xl font-bold leading-tight">
+        Sua música,<br>na sua forma.
+      </h1>
+      <p class="mt-6 text-lg text-muted max-w-md">
+        O Melodia entende o seu gosto e monta playlists sob medida, com som de altíssima qualidade e novas descobertas todo dia.
+      </p>
+      <div class="mt-8 flex items-center gap-4">
+        <a href="#contato" class="bg-accent px-7 py-3 rounded-full font-medium hover:bg-accent/90 transition-colors">Ouvir agora</a>
+        <a href="#funcionalidades" class="text-muted hover:text-white transition-colors text-sm">Ver funcionalidades</a>
+      </div>
+    </div>
+
+    <!-- visual: barras de áudio -->
+    <div class="flex items-end justify-center gap-2 h-64" aria-hidden="true">
+      <div class="w-4 rounded-full bg-accent bar" style="height:40%"></div>
+      <div class="w-4 rounded-full bg-amber bar" style="height:70%"></div>
+      <div class="w-4 rounded-full bg-accent bar" style="height:100%"></div>
+      <div class="w-4 rounded-full bg-amber bar" style="height:55%"></div>
+      <div class="w-4 rounded-full bg-accent bar" style="height:85%"></div>
+      <div class="w-4 rounded-full bg-amber bar" style="height:35%"></div>
+      <div class="w-4 rounded-full bg-accent bar" style="height:65%"></div>
+    </div>
+  </section>
+
+  <!-- Benefícios -->
+  <section id="beneficios" class="max-w-6xl mx-auto px-6 py-20">
+    <h2 class="font-display text-3xl font-bold max-w-lg">Feito para quem vive de música</h2>
+    <div class="mt-12 grid sm:grid-cols-2 gap-10">
+      <div class="flex gap-4">
+        <i class="fa-solid fa-waveform-lines text-amber text-2xl mt-1"></i>
+        <div>
+          <h3 class="font-display font-bold text-lg">Som de altíssima qualidade</h3>
+          <p class="text-muted mt-1 text-sm">Áudio em alta definição, pensado pra você sentir cada detalhe da faixa.</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <i class="fa-solid fa-list-music text-amber text-2xl mt-1"></i>
+        <div>
+          <h3 class="font-display font-bold text-lg">Playlists personalizadas</h3>
+          <p class="text-muted mt-1 text-sm">Combinações criadas a partir do que você realmente escuta.</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <i class="fa-solid fa-compass text-amber text-2xl mt-1"></i>
+        <div>
+          <h3 class="font-display font-bold text-lg">Descoberta de novos artistas</h3>
+          <p class="text-muted mt-1 text-sm">Recomendações que te tiram da bolha e te apresentam nomes novos.</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <i class="fa-solid fa-hand-pointer text-amber text-2xl mt-1"></i>
+        <div>
+          <h3 class="font-display font-bold text-lg">Interface intuitiva</h3>
+          <p class="text-muted mt-1 text-sm">Tudo a um toque de distância, sem menus complicados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Funcionalidades -->
+  <section id="funcionalidades" class="bg-surface py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="font-display text-3xl font-bold max-w-lg">O que você encontra no app</h2>
+      <div class="mt-12 grid md:grid-cols-3 gap-6">
+        <div class="bg-bg rounded-2xl p-6">
+          <i class="fa-solid fa-headphones text-accent text-2xl"></i>
+          <h3 class="font-display font-bold mt-4">Modo offline</h3>
+          <p class="text-muted text-sm mt-2">Baixe suas playlists e ouça sem depender de internet.</p>
+        </div>
+        <div class="bg-bg rounded-2xl p-6">
+          <i class="fa-solid fa-users text-accent text-2xl"></i>
+          <h3 class="font-display font-bold mt-4">Playlists colaborativas</h3>
+          <p class="text-muted text-sm mt-2">Monte listas junto com seus amigos, em tempo real.</p>
+        </div>
+        <div class="bg-bg rounded-2xl p-6">
+          <i class="fa-solid fa-chart-simple text-accent text-2xl"></i>
+          <h3 class="font-display font-bold mt-4">Seu ano na música</h3>
+          <p class="text-muted text-sm mt-2">Estatísticas de escuta pra você olhar seu gosto de fora.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section id="depoimentos" class="max-w-6xl mx-auto px-6 py-20">
+    <h2 class="font-display text-3xl font-bold max-w-lg">Quem usa, recomenda</h2>
+    <div class="mt-12 grid md:grid-cols-3 gap-8">
+      <blockquote class="border-t border-white/10 pt-6">
+        <p class="text-muted">"Descobri mais artistas novos em um mês de Melodia do que em anos de rádio."</p>
+        <footer class="mt-4 flex items-center gap-3">
+          <img src="https://i.pravatar.cc/80?img=32" alt="" class="w-10 h-10 rounded-full">
+          <span class="text-sm font-medium">Bia Fontes</span>
+        </footer>
+      </blockquote>
+      <blockquote class="border-t border-white/10 pt-6">
+        <p class="text-muted">"O modo offline salvou minhas viagens de metrô. Som muito limpo."</p>
+        <footer class="mt-4 flex items-center gap-3">
+          <img src="https://i.pravatar.cc/80?img=15" alt="" class="w-10 h-10 rounded-full">
+          <span class="text-sm font-medium">Rafael Nunes</span>
+        </footer>
+      </blockquote>
+      <blockquote class="border-t border-white/10 pt-6">
+        <p class="text-muted">"As playlists colaborativas mudaram como eu e minha banda trocamos referência."</p>
+        <footer class="mt-4 flex items-center gap-3">
+          <img src="https://i.pravatar.cc/80?img=47" alt="" class="w-10 h-10 rounded-full">
+          <span class="text-sm font-medium">Lívia Prado</span>
+        </footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="bg-surface py-20">
+    <div class="max-w-xl mx-auto px-6 text-center">
+      <h2 class="font-display text-3xl font-bold">Entre na lista de espera</h2>
+      <p class="text-muted mt-3">Deixe seu e-mail e avisamos assim que o Melodia estiver disponível pra você.</p>
+
+      <form id="contact-form" class="mt-8 flex flex-col sm:flex-row gap-3">
+        <input
+          type="email"
+          required
+          placeholder="seuemail@exemplo.com"
+          class="flex-1 bg-bg border border-white/10 rounded-full px-5 py-3 text-sm outline-none focus:border-accent"
+        >
+        <button type="submit" class="bg-accent px-6 py-3 rounded-full font-medium hover:bg-accent/90 transition-colors">Quero avisar</button>
+      </form>
+      <p id="form-message" class="text-sm text-amber mt-3 hidden">Prontinho! Você vai ser avisado em primeira mão.</p>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted">
+    <span>© 2026 Melodia. Todos os direitos reservados.</span>
+    <div class="flex items-center gap-5">
+      <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#" class="hover:text-white transition-colors">Política de privacidade</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
